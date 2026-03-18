@@ -19,12 +19,9 @@
 
     <servlet-mapping>
         <servlet-name>spring-mvc</servlet-name>
-        <url-pattern>*.do</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <welcome-file-list>
-        <welcome-file>index.do</welcome-file>
-    </welcome-file-list>
 
     <!-- Filtro UTF-8 -->
     <filter>
@@ -51,23 +48,12 @@
     </filter>
     <filter-mapping>
         <filter-name>IMCFiltro</filter-name>
-        <url-pattern>/calcular.do</url-pattern>
+        <url-pattern>/calcular</url-pattern>
     </filter-mapping>
     <filter-mapping>
         <filter-name>IMCFiltro</filter-name>
         <url-pattern>/api/imc/*</url-pattern>
     </filter-mapping>
-        <servlet>
-        <servlet-name>redirectServlet</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/spring-mvc-servlet.xml</param-value>
-        </init-param>
-        <init-param>
-            <param-name>jersey.config.server.provider.scanning.recursive</param-name>
-            <param-value>false</param-value>
-        </init-param>
-    </servlet>
+        
 
 </web-app>

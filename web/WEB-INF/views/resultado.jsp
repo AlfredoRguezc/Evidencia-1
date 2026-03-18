@@ -78,7 +78,7 @@
             Diagnóstico: <strong>${diagnostico}</strong>
         </div>
 
-        <a href="/">← Calcular otro IMC</a>
+        <a href="${pageContext.request.contextPath}/">← Calcular otro IMC</a>
     </div>
 </body>
 </html>

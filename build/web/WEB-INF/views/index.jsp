@@ -62,7 +62,7 @@
         <p class="error">${error}</p>
     <% } %>
 
-    <form action="calcular.do" method="post">
+    <form action="calcular" method="post">
         <label>Nombre:</label>
         <input type="text" name="nombre" required />
 

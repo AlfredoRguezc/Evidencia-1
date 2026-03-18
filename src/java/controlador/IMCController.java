@@ -11,12 +11,12 @@ import modelo.CalculadoraIMC;
 @Controller
 public class IMCController {
 
-    @GetMapping("/index.do")
+    @GetMapping("/")
     public String mostrarFormulario() {
         return "index";
     }
 
-    @PostMapping("/calcular.do")
+    @PostMapping("/calcular")
     public String calcularIMC(
             @RequestParam String nombre,
             @RequestParam int edad,
